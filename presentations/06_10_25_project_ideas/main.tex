@@ -1,0 +1,253 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{whale}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+% Add UPC colors
+\definecolor{upcblue}{RGB}{0, 93, 170}
+
+% Modify theme colors
+\setbeamercolor{structure}{fg=upcblue}
+
+% Adjust font sizes
+\setbeamerfont{itemize/enumerate body}{size=\small}
+\setbeamerfont{itemize/enumerate subbody}{size=\footnotesize}
+
+\makeatletter
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,rightskip=.3cm plus1fil]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\hfill\insertframenumber{} / \inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+}
+\makeatother
+
+\setbeamertemplate{navigation symbols}{}
+\logo{}
+
+\title{Cognitive Interaction with Robots}
+\subtitle{ARM2U Project Ideas}
+\author{[Student Name 1], [Student Name 2], [Student Name 3], Jean DIÉ}
+\institute{
+    \texttt{Cognitive Interaction with Robots}\\
+    Academic Year 2025-2026\\
+
+    \vspace{1cm}
+    \includegraphics[width=0.4\textwidth]{assets/upc_logo.png}\\[1ex]
+}
+\date{October 6, 2025}
+
+\begin{document}
+
+% SLIDE 1: Title
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+% SLIDE 3: ARM2U Project Overview
+\begin{frame}{ARM2U Project - Overview}
+    \begin{columns}[T]
+        \begin{column}{0.6\textwidth}
+            \textbf{Project Mission:}
+            \begin{quote}
+                \textit{"Improving the quality of life of people in need of assistive technologies"}
+            \end{quote}
+
+            \vspace{0.3cm}
+
+            \textbf{Key Characteristics:}
+            \begin{itemize}
+                \item Founded in 2018 at ETSEIB, UPC Barcelona
+                \item Developing affordable myoelectric transradial prosthetic arm
+                \item User-centered design approach
+                \item Participates in Cybathlon competition
+                \item Student-led biomedical engineering initiative
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.4\textwidth}
+            \centering
+            % Add ARM2U logo/image if available
+            % \includegraphics[width=0.8\textwidth]{assets/arm2u_logo.png}
+
+            \vspace{1cm}
+
+            \textbf{Contact:}\\
+            \footnotesize
+            arm2u.etseib@upc.edu\\
+
+            \vspace{0.5cm}
+
+            \textbf{Website:}\\
+            \footnotesize
+            \href{https://arm2u-etseib.upc.edu/wp/}{arm2u-etseib.upc.edu}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% SLIDE 4: ARM2U Technical Aspects
+\begin{frame}{ARM2U - Technical Focus}
+    \vspace{2cm}
+
+    \begin{center}
+        \Large
+        Technical details and cognitive interaction opportunities\\[0.5cm]
+    \end{center}
+
+    \vspace{2cm}
+\end{frame}
+
+% SLIDE 5: Project Ideas Framework
+\begin{frame}{Project Ideas - Framework}
+    \begin{block}{Core Areas for Exploration}
+        \begin{enumerate}
+            \item \textbf{Embodiment \& Neural Integration}
+            \item \textbf{Multi-Modal Communication Interfaces}
+            \item \textbf{Adaptive Learning \& Personalization}
+            \item \textbf{Signal Processing \& Control Translation}
+        \end{enumerate}
+    \end{block}
+
+    \vspace{0.3cm}
+
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Technical Considerations:}
+            \begin{itemize}
+                \item Signal acquisition \& processing
+                \item Natural language processing
+                \item Computer vision systems
+                \item Real-time control integration
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \textbf{Human Factors:}
+            \begin{itemize}
+                \item User interface design
+                \item Accessibility considerations
+                \item Cognitive load management
+                \item User adaptation \& embodiment
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% SLIDE 6: Project Idea 1
+\begin{frame}{Project Idea 1: VisionArm}
+    \begin{block}{Computer Vision-Guided Control}
+        Integrate RGB-D camera with object detection algorithms to enable autonomous identification and grasping of target objects. The system would provide visual feedback and semi-autonomous control to assist users in manipulation tasks.
+    \end{block}
+
+    \vspace{0.5cm}
+
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Key Components:}
+            \begin{itemize}
+                \item RGB-D camera
+                \item Object detection algorithms
+                \item Grasp planning
+                \item Real-time control
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \textbf{Main Challenge:}
+            \begin{itemize}
+                \item Accurate object recognition
+                \item Safe autonomous grasping
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% SLIDE 7: Project Idea 2
+\begin{frame}{Project Idea 2: VoiceArm}
+    \begin{block}{Natural Language Control}
+        Implement speech-to-text processing combined with natural language understanding to translate voice commands into specific prosthetic actions. Users could issue commands like "grasp the cup" or "open hand" for intuitive control.
+    \end{block}
+
+    \vspace{0.5cm}
+
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Key Components:}
+            \begin{itemize}
+                \item Speech-to-text system
+                \item Natural language processing
+                \item Command interpreter
+                \item Action execution
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \textbf{Main Challenge:}
+            \begin{itemize}
+                \item Accurate intent recognition
+                \item Real-time response
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% SLIDE 8: Project Idea 3
+\begin{frame}{Project Idea 3: MindArm}
+    \begin{block}{Brain-Computer Interface}
+        Develop an EEG-based system that captures neural signals and translates motor imagery patterns into direct control commands for the ARM2U prosthetic. This would enable thought-based control for users with limited muscle activity.
+    \end{block}
+
+    \vspace{0.5cm}
+
+    \begin{columns}[T]
+        \begin{column}{0.5\textwidth}
+            \textbf{Key Components:}
+            \begin{itemize}
+                \item EEG signal acquisition
+                \item Pattern recognition
+                \item Signal processing
+                \item Motor command translation
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \textbf{Main Challenge:}
+            \begin{itemize}
+                \item Signal classification accuracy
+                \item User training time
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+% SLIDE 9: Questions and Discussion
+\begin{frame}
+    \vspace{2cm}
+
+    \begin{center}
+        {\Huge Questions and Discussion}
+    \end{center}
+
+    \vspace{2cm}
+
+    \begin{center}
+        \Large
+        Thank you for your attention!
+    \end{center}
+
+    \vspace{1cm}
+\end{frame}
+
+\end{document}
